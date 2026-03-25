@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Service Packages | The Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed-dim": "#f0c03e",
+                        "primary-fixed": "#ffdf97",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#775a00",
+                        "on-surface": "#1c1b1b",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "background": "#fcf9f8",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-secondary-container": "#656464",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-surface": "#313030",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#5d5f5f",
+                        "outline": "#807662",
+                        "primary": "#775a00",
+                        "on-tertiary-container": "#484a4a",
+                        "inverse-primary": "#f0c03e",
+                        "on-background": "#1c1b1b",
+                        "surface-container": "#f0edec",
+                        "outline-variant": "#d2c5ae",
+                        "surface-container-high": "#ebe7e7",
+                        "primary-container": "#e2b331",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary-fixed-variant": "#5a4400",
+                        "secondary-container": "#e4e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-low": "#f6f3f2",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#5d4600",
+                        "on-primary-fixed": "#251a00",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-container": "#b8b9b9",
+                        "surface": "#fcf9f8",
+                        "secondary-fixed": "#e4e2e1",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#4e4634"
+                    },
+                    fontFamily: {
+                        "notoSerif": ["Noto Serif"],
+                        "plusJakartaSans": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-shadow {
+            box-shadow: 0 20px 40px rgba(119, 90, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-plusJakartaSans selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-zinc-950/80 backdrop-blur-md shadow-[0_20px_40px_rgba(119,90,0,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto w-full">
+<a class="font-notoSerif text-2xl tracking-tighter text-on-surface dark:text-surface" href="#">The Atelier</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-secondary dark:text-zinc-400 hover:text-on-surface transition-all duration-300 font-plusJakartaSans" href="#">Portfolio</a>
+<a class="text-primary dark:text-primary-container font-semibold border-b-2 border-primary transition-all duration-300 font-plusJakartaSans" href="#">Services</a>
+<a class="text-secondary dark:text-zinc-400 hover:text-on-surface transition-all duration-300 font-plusJakartaSans" href="#">About</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-md font-medium hover:bg-primary transition-all duration-300 active:scale-95">Inquire</button>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Header Section -->
+<header class="mb-16 md:mb-24 md:max-w-3xl">
+<span class="font-plusJakartaSans text-xs font-bold tracking-[0.2em] uppercase text-primary mb-4 block">Our Offerings</span>
+<h1 class="font-notoSerif text-4xl md:text-6xl tracking-tight leading-tight mb-6">Investment in Your Stories</h1>
+<p class="text-secondary text-lg md:text-xl leading-relaxed font-light">
+                Carefully curated packages designed to capture every nuance of your celebration. From intimate elopements to grand cinematic productions.
+            </p>
+</header>
+<!-- Pricing Tiers Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Tier 1: The Highlight -->
+<div class="bg-surface-container-low rounded-lg p-8 md:p-10 flex flex-col transition-all duration-300 hover:scale-[1.02] premium-shadow group">
+<div class="mb-8">
+<h3 class="font-notoSerif text-2xl mb-2">The Highlight</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-secondary text-sm">Starting at</span>
+<span class="text-3xl font-bold font-plusJakartaSans text-on-surface">$2,800</span>
+</div>
+</div>
+<div class="mb-8 border-b border-outline-variant/15 pb-8">
+<p class="text-secondary leading-relaxed mb-6 font-light">Essential digital content creation for the modern couple.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="text-on-surface/80">6 Hours of Coverage</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="text-on-surface/80">Raw Footage iPhone Content</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="text-on-surface/80">3 Edited Social Reels</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="text-on-surface/80">48-Hour Delivery</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-surface-container-lowest border border-outline/20 text-on-surface rounded-md font-semibold hover:bg-primary hover:text-white transition-all duration-300">Choose Package</button>
+</div>
+</div>
+<!-- Tier 2: The Keepsake (Featured) -->
+<div class="relative bg-surface-container-lowest rounded-lg p-8 md:p-10 flex flex-col transition-all duration-300 scale-105 z-10 premium-shadow border-2 border-primary-container group">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] tracking-[0.2em] uppercase px-4 py-1 font-bold rounded-full">Most Desired</div>
+<div class="mb-8">
+<h3 class="font-notoSerif text-3xl mb-2">The Keepsake</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-secondary text-sm">Starting at</span>
+<span class="text-4xl font-bold font-plusJakartaSans text-on-surface">$4,500</span>
+</div>
+</div>
+<div class="mb-8 border-b border-outline-variant/15 pb-8">
+<p class="text-secondary leading-relaxed mb-6 font-light">Comprehensive storytelling with a cinematic editorial touch.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-on-surface font-medium">8 Hours of Coverage</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-on-surface font-medium">Secondary Content Creator</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-on-surface font-medium">5 Edited Social Reels</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-on-surface font-medium">Drone/Aerial Footage</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-on-surface font-medium">Next-Day Reveal Clips</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-primary text-white rounded-md font-semibold hover:bg-on-primary-container transition-all duration-300 shadow-md">Secure Your Date</button>
+</div>
+</div>
+<!-- Tier 3: The Ultimate Collection -->
+<div class="bg-surface-container-low rounded-lg p-8 md:p-10 flex flex-col transition-all duration-300 hover:scale-[1.02] premium-shadow group">
+<div class="mb-8">
+<h3 class="font-notoSerif text-2xl mb-2">The Ultimate</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-secondary text-sm">Starting at</span>
+<span class="text-3xl font-bold font-plusJakartaSans text-on-surface">$7,200</span>
+</div>
+</div>
+<div class="mb-8 border-b border-outline-variant/15 pb-8">
+<p class="text-secondary leading-relaxed mb-6 font-light">An immersive archival experience for the legacy-minded.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<span class="text-on-surface/80">Unlimited Weekend Coverage</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<span class="text-on-surface/80">Welcome Dinner &amp; Brunch Coverage</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<span class="text-on-surface/80">Full Length Documentary Film</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<span class="text-on-surface/80">Hardcover Storybook Album</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-surface-container-lowest border border-outline/20 text-on-surface rounded-md font-semibold hover:bg-primary hover:text-white transition-all duration-300">Request Bespoke Quote</button>
+</div>
+</div>
+</div>
+<!-- Trust & Detail Section -->
+<section class="mt-24 md:mt-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Premium wedding details" class="w-full h-full object-cover" data-alt="High-end wedding reception table detail with gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9W1tqiKe_LV_FMbRMlaZxz74iDE9QQAWvAggBmfpw7f5ilC_WpybfDeLQyZjoCRwCmkGC7cUalJ4HDN-4bexbeRTrRG8M4gZr8TIds2Ug6dWCHQI203e-0maWToeYGJMVzT7e9erGWJrKcT4zg-OGXudJKgvIyLzGC9lGizVGVBbXKfiSgBuyuRHFWwxMnA0je_4YQBbUN10lBlLk7EGqbzNAQJeaqSEwwdW2QuXSYom9-4sytX-MUedNruPd9B9bxtuXwSdd1fyn"/>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+<div>
+<h2 class="font-notoSerif text-3xl md:text-4xl mb-8 leading-tight">Your story is unique. Your coverage should be too.</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl shrink-0">history_toggle_off</span>
+<div>
+<h4 class="font-semibold text-lg mb-2">Transparent Timelines</h4>
+<p class="text-secondary font-light">We guarantee 48-hour delivery for social edits, ensuring you share the magic while the excitement is still fresh.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl shrink-0">camera_enhance</span>
+<div>
+<h4 class="font-semibold text-lg mb-2">Discreet Presence</h4>
+<p class="text-secondary font-light">Our creators blend into your celebration, capturing candid moments without disrupting the flow of your day.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl shrink-0">auto_awesome</span>
+<div>
+<h4 class="font-semibold text-lg mb-2">Bespoke Options</h4>
+<p class="text-secondary font-light">Need something different? We offer custom add-ons including rehearsal dinners, engagement sessions, and heirloom prints.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Simple Footer -->
+<footer class="w-full py-12 px-6 border-t border-outline-variant/15 bg-surface-container-low dark:bg-zinc-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-notoSerif italic text-lg text-primary mb-2">The Atelier</span>
+<span class="font-plusJakartaSans text-sm tracking-wide uppercase text-secondary dark:text-zinc-500">© 2024 The Digital Atelier. All rights reserved.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-plusJakartaSans text-sm tracking-wide uppercase text-secondary hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-plusJakartaSans text-sm tracking-wide uppercase text-secondary hover:text-primary transition-colors" href="#">TikTok</a>
+<a class="font-plusJakartaSans text-sm tracking-wide uppercase text-secondary hover:text-primary transition-colors" href="#">Pinterest</a>
+<a class="font-plusJakartaSans text-sm tracking-wide uppercase text-secondary hover:text-primary transition-colors" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 z-50">
+<div class="flex justify-around items-center py-4">
+<a class="flex flex-col items-center gap-1 text-secondary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] uppercase tracking-tighter">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-[10px] uppercase tracking-tighter">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-secondary" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[10px] uppercase tracking-tighter">Gallery</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-secondary" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] uppercase tracking-tighter">Contact</span>
+</a>
+</div>
+</div>
+</body></html>
