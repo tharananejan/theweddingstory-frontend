@@ -1,4 +1,14 @@
-.mainlogo{
-    width: 70px;
-    height: auto;
+.logoContainer {
+    display: flex;
+    align-items: center;
+    /* padding: 0.5rem 1rem; */
+    text-decoration: none;
+}
+
+.mainlogo {
+    height: 32px;
+    /* Adjust this height to fit your specific logo perfectly */
+    width: auto;
+    /* Keeps the image aspect ratio intact */
+    object-fit: contain;
 }

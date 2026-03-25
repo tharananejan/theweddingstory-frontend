@@ -11,12 +11,14 @@ function App() {
   return (
     <Router>
       <Header />
+      <main style={{ paddingTop: '7rem', paddingBottom: '5rem' }}>
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+      </main>
     </Router>
   )
 }
