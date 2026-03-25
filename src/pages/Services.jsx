@@ -1,11 +1,16 @@
+import React from 'react';
+import '../components/ServicesBody.css';
 
-function Services() {
+import PackageHeader   from '../components/PackageHeader';
+import PricingGrid     from '../components/PricingGrid';
+import FeatureShowcase from '../components/FeatureShowcase';
+
+export default function Services() {
   return (
-    <div className="services">
-      <h1>Our Services</h1>
-      <p>At The Wedding Story, we offer a range of services to make your wedding day unforgettable. Our team of experienced photographers and videographers will work closely with you to capture every precious moment. We also provide storytelling services to create a beautiful narrative of your wedding day. Contact us to learn more about our packages and how we can help you create lasting memories.</p>
-    </div>
-  )
+    <main className="services-page">
+      <PackageHeader />
+      <PricingGrid />
+      <FeatureShowcase />
+    </main>
+  );
 }
-
-export default Services;
