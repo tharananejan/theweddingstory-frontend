@@ -1,0 +1,21 @@
+/* Header.module.css */
+.headerMain {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  /* Mapped from bg-surface/80 */
+  background-color: rgba(252, 249, 248, 0.8); 
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 40px #9165002d;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem; /* px-6 py-4 */
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+}
