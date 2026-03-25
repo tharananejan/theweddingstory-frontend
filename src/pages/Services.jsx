@@ -1,14 +1,30 @@
-import PageHeader   from './PageHeader';
-import PricingCards from './PricingCards';
-import TrustSection from './TrustSection';
-import styles       from './services.module.css';
+import React from 'react';
+import '\src\components\ServicesBody.css';
 
-export default function Services() {
+import PackageHeader from '\src\components\PackageHeader';
+import PricingGrid from '\src\components\PricingGrid.jsx';
+import FeatureShowcase from '\src\components\FeatureShowcase.jsx';
+
+
+const Services = () => {
   return (
-    <main className={styles.page}>
-      <PageHeader />
-      <PricingCards />
-      <TrustSection />
+    <main className="services-container">
+      {/* 01. Typography & Introduction Section */}
+      <section className="section-wrapper">
+        <PackageHeader />
+      </section>
+
+      {/* 02. Interactive Pricing Tiers */}
+      <section className="section-wrapper">
+        <PricingGrid />
+      </section>
+
+      {/* 03. Detail & Trust Showcase */}
+      <section className="section-wrapper">
+        <FeatureShowcase />
+      </section>
     </main>
   );
-}
+};
+
+export default Services;
