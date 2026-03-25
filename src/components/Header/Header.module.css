@@ -1,3 +1,4 @@
+/* Header.module.css */
 .headerMain {
   position: fixed;
   top: 0;
@@ -8,4 +9,13 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 20px 40px rgba(119, 90, 0, 0.06);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem; /* px-6 py-4 */
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
 }
