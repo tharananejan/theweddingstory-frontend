@@ -6,9 +6,9 @@
   z-index: 50;
   /* Mapped from bg-surface/80 */
   background-color: rgba(252, 249, 248, 0.8); 
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 20px 40px rgba(119, 90, 0, 0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 40px #9165002d;
 }
 
 .navContainer {

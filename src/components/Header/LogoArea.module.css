@@ -6,9 +6,10 @@
 }
 
 .mainlogo {
-    height: 32px;
+    height: 40px;
     /* Adjust this height to fit your specific logo perfectly */
     width: auto;
     /* Keeps the image aspect ratio intact */
     object-fit: contain;
+    border-radius: 20%px;
 }

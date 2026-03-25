@@ -32,16 +32,20 @@
     font-size: 1rem;
     border-bottom: 2px solid transparent;
     padding-bottom: 4px;
+    padding:10px;
 }
 
-.navbarItem a:hover {
-    color: #1c1b1b; 
-}
 
 .navbarItem a.active {
     color: #775a00; 
     font-weight: 600; 
     border-bottom: 2px solid #775a00; 
+}
+.navbarItem a:hover {
+    color: #1c1b1b;
+    border-radius: 8px;
+    background-color: #ffefd169;
+    border: none;
 }
 
 /* Mobile Menu Button */
@@ -80,9 +84,9 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(252, 249, 248, 0.98); 
-    backdrop-filter: blur(12px);
+    background-color: #ffefd1a9; 
     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
     overflow: hidden;
