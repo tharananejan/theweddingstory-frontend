@@ -1,11 +1,27 @@
+import React, { useState } from 'react';
+import './Home.css';
+import Hero from '../components/Hero/Hero';
+import Filters from '../components/Filters/Filters';
+import PortfolioGrid from '../components/ReelCard/PortfolioGrid';
+import CTA from '../components/CTA/CTA';
 
-function Home() {
+const Home = () => {
+  // 1. Create the state for the active category
+  const [activeFilter, setActiveFilter] = useState("All Stories");
+
   return (
-    <div className="home">
-      <h1>Welcome to The Wedding Story</h1>
-      <p>Your one-stop destination for all your wedding content creation needs. We specialize in capturing the magic of your special day through stunning photography, videography, and storytelling. Let us help you create lasting memories that you can cherish forever.</p>
-    </div>
-  )
-}
+    <main className="home-wrapper">
+      <Hero />
+      {/* 2. Pass the state and the setter function to Filters */}
+      <Filters 
+        activeFilter={activeFilter} 
+        onFilterChange={setActiveFilter} 
+      />
+      {/* 3. Pass the active filter to the Grid */}
+      <PortfolioGrid activeFilter={activeFilter} />
+      <CTA />
+    </main>
+  );
+};
 
 export default Home;

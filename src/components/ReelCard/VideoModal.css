@@ -1,0 +1,97 @@
+/* src/components/Portfolio/VideoModal.css */
+
+.video-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Using Neutral Color #111111 with transparency */
+  background-color: rgba(17, 17, 17, 0.9); 
+  /* Visual depth cue from the original design */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 95%;
+  /* Optimized for vertical 'Reel' aspect ratio */
+  max-width: 480px; 
+  background-color: #000;
+  /* Shape 1: Subtle roundedness from design system */
+  border-radius: var(--radius-subtle, 0.125rem);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  transform: translateY(0);
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.main-reel-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+  /* Using Plus Jakarta Sans for UI labels */
+  font-family: var(--body-font, 'Plus Jakarta Sans', sans-serif);
+  font-weight: 300;
+  transition: opacity 0.3s ease;
+}
+
+.video-close:hover {
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for smaller mobile screens */
+@media (max-height: 700px) {
+  .video-modal-content {
+    max-width: 350px;
+  }
+  .video-close {
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

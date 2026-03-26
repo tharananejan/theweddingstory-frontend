@@ -1,0 +1,98 @@
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.theme-form {
+  background: var(--surface-low, #f6f3f2);
+  width: 100%;
+  max-width: 500px;
+  padding: 3rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 30px rgba(119, 90, 0, 0.04);
+  border: 1px solid var(--border-light, rgba(210, 197, 174, 0.3));
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.theme-form:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(119, 90, 0, 0.08);
+}
+
+.form-title {
+  font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+  color: var(--on-surface, #1c1b1b);
+  margin-bottom: 2rem;
+  text-align: left;
+  margin-top: 0;
+}
+
+.theme-form .input-box {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.theme-form label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--secondary, #5f5e5e);
+}
+
+.theme-form .field,
+.theme-form .message-field {
+  width: 100%;
+  background: white;
+  border: 1px solid var(--border-light, rgba(210, 197, 174, 0.3));
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: var(--on-surface, #1c1b1b);
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.theme-form .field:focus,
+.theme-form .message-field:focus {
+  border-color: var(--primary, #775a00);
+  box-shadow: 0 0 0 3px rgba(119, 90, 0, 0.1);
+}
+
+.theme-form .message-field {
+  height: 150px;
+  resize: vertical;
+}
+
+.cta-button.primary {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--primary, #775a00);
+  color: white;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary:hover {
+  background: #5d4600;
+}
+
+.submit-result {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary, #775a00);
+}
