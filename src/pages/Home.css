@@ -1,0 +1,18 @@
+
+
+/* Home.css */
+:root {
+  --primary: #E2B331; /* Vibrant shade for highlights */
+  --secondary: #404040; /* Grounding tone */
+  --tertiary: #F8F8F8; /* Light background */
+  --neutral: #111111; /* Text and depth */
+  --headline-font: 'Noto Serif', serif;
+  --body-font: 'Plus Jakarta Sans', sans-serif;
+  --radius-subtle: 0.125rem; /* Shape 1 from DESIGN.md */
+}
+
+.home-wrapper {
+  background-color: var(--tertiary);
+  min-height: 100vh;
+  padding-top: 60px; /* Space for your fixed navbar */
+}

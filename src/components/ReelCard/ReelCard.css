@@ -1,0 +1,112 @@
+/* src/components/Portfolio/ReelCard.css */
+
+.reel-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-subtle);
+  cursor: pointer;
+  background: var(--neutral);
+  /* Ensure a solid stack for absolute children */
+  display: block;
+}
+
+.reel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Removes baseline spacing issues */
+  transition: transform 0.7s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.reel-card:hover .reel-img {
+  transform: scale(1.08);
+}
+
+/* 1. FIX: Perfect Centering for the Play Button */
+.reel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(3px);
+  z-index: 2; /* Ensures it sits above details on hover */
+}
+
+.reel-card:hover .reel-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary); /* #E2B331 from DESIGN.md */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.reel-card:hover .play-button {
+  transform: scale(1);
+}
+
+/* 2. FIX: Icon rendering (prevents 'row text' look) */
+.icon-vibe {
+  font-size: 36px !important;
+  user-select: none;
+  /* Specific variation settings from your original design */
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* 3. FIX: Details stack (Tag and Name) */
+.reel-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 24px;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(17, 17, 17, 0.9));
+  color: white;
+  display: flex;
+  flex-direction: column; /* Forces vertical stacking */
+  gap: 4px;
+  z-index: 1;
+}
+
+.reel-tag {
+  font-family: var(--body-font);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  opacity: 0.8;
+}
+
+.reel-name {
+  font-family: var(--headline-font); /* Noto Serif */
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Bento Grid Overrides */
+@media (min-width: 768px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    padding: 0 40px;
+  }
+  .large { grid-column: span 4; aspect-ratio: 16/10; }
+  .portrait { grid-column: span 2; grid-row: span 2; aspect-ratio: 9/16; }
+  .standard { grid-column: span 2; aspect-ratio: 3/4; }
+  .wide { grid-column: span 2; aspect-ratio: 4/5; }
+}
