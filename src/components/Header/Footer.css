@@ -1,0 +1,66 @@
+.footerMain {
+    background-color: rgba(252, 249, 248, 0.85);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 -2px 40px #9165002d;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #5f5e5e;
+    padding: 18px 2rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+
+.footerBrand {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #775a00;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+.footerLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #5f5e5e;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+    padding: 0;
+}
+
+.footerLinks a:hover {
+    color: #775a00;
+}
+
+.footerCopyright {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
