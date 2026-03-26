@@ -1,0 +1,67 @@
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: var(--background, #fcf9f8);
+  min-height: 80vh;
+  align-items: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-content .title {
+  font-family: 'Noto Serif', serif;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  color: var(--on-surface, #1c1b1b);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.contact-content .description {
+  color: var(--secondary, #5f5e5e);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.contact-details {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-details .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--on-surface, #1c1b1b);
+}
+
+.contact-details .icon {
+  color: var(--primary, #775a00);
+  font-size: 1.5rem;
+  background: var(--surface-low, #f6f3f2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-light, rgba(210, 197, 174, 0.3));
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 1.5rem;
+  }
+}
