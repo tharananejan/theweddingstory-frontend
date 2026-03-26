@@ -6,19 +6,22 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Footer from './components/Header/Footer'
 function App() {
- 
+
   return (
     <Router>
       <Header />
       <main style={{ paddingTop: '7rem', paddingBottom: '5rem' }}>
-      <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+
         </Routes>
       </main>
+      <Footer />
     </Router>
   )
 }
