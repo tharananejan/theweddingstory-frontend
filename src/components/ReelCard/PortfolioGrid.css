@@ -1,0 +1,84 @@
+/* PortfolioGrid.css */
+.portfolio-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .reel-card.large { grid-column: span 4; aspect-ratio: 16/10; }
+  .reel-card.portrait { grid-column: span 2; grid-row: span 2; aspect-ratio: 9/16; }
+  .reel-card.standard { grid-column: span 2; aspect-ratio: 3/4; }
+  .reel-card.wide { grid-column: span 2; aspect-ratio: 4/5; }
+}
+
+/* ReelCard.css */
+.reel-card {
+  position: relative;
+  overflow: hidden;
+  background: #eee;
+  cursor: pointer;
+}
+
+.reel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.reel-card:hover .reel-img { transform: scale(1.05); }
+
+.reel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(2px);
+}
+
+.reel-card:hover .reel-overlay { opacity: 1; }
+
+.play-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.reel-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+}
+
+.reel-tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+}
+
+.reel-title {
+  font-family: var(--headline-font);
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
