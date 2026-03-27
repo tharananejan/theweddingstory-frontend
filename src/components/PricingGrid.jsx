@@ -2,10 +2,10 @@ import React from 'react';
 
 const tiers = [
   {
-    name: "The Highlight",
-    price: "2,800",
+    name: "Standard",
+    price: "18,000",
     description: "Essential digital content creation for the modern couple.",
-    features: ["6 Hours of Coverage", "Raw Footage iPhone Content", "3 Edited Social Reels", "48-Hour Delivery"],
+    features: ["6 Hours of on-set coverage of event", "Raw Footage iPhone Content", "3 Edited Social Reels", "48-Hour Delivery"],
     cta: "Choose Package",
     featured: false
   },
