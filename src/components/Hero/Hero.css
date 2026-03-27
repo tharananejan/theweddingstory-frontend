@@ -1,17 +1,17 @@
 /* Hero.css */
 .hero-box {
-  max-width: 1200px;
-  margin: 80px auto;
+  max-width: 100%;
+  margin: 0 0 40px 0;
   padding: 72px 24px;
-  min-height: 68vh;
-  border-radius: 16px;
+  min-height: 80vh;
+  
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   background-image:
     linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.72)),
-    url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTQxdDBkdW02aHA4ZWlwcWQ2YWtodGh5eWJsampuNmlneG1qNTI4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WsWkDyER62I3kCbAFJ/giphy.gif");
+    url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2U1dzd5bDVtOGFhNWgwaDJxNG13ZmZ2b3RoeXFwMWd5d2h5Mjg1ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dcmN0rX9qyfvOMAmdj/giphy.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
