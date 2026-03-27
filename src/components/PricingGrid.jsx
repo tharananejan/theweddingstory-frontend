@@ -13,7 +13,7 @@ const tiers = [
     name: "Premium",
     price: "25,000",
     //description: "Comprehensive storytelling with a cinematic editorial touch.",
-    features: ["8 Hours of Coverage", "Secondary Content Creator", "5 Edited Social Reels", "Drone/Aerial Footage", "Next-Day Reveal Clips"],
+    features: ["8 Hours of on-set coverage", "3-4 edited cinematic Instagram/ Tiktok Reels", "10 Ready to post shorts (Insta stories)", "Unlimited raw content"],
     cta: "Choose Package",
     featured: true
   },
