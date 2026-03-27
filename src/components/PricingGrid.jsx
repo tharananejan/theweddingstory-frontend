@@ -37,8 +37,8 @@ const PricingGrid = () => {
           <div className="card-header">
             <h3 className="tier-name">{tier.name}</h3>
             <div className="price-container">
-              <span className="starting-at">Starting at</span>
-              <span className="amount">${tier.price}</span>
+              {/* <span className="starting-at">Starting at</span> */}
+              <span className="amount">LKR{tier.price}</span>
             </div>
           </div>
 
