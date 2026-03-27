@@ -18,10 +18,10 @@ const tiers = [
     featured: true
   },
   {
-    name: "The Ultimate",
-    price: "7,200",
+    name: "LUX",
+    price: "35,000",
     //description: "An immersive archival experience for the legacy-minded.",
-    features: ["Unlimited Weekend Coverage", "Welcome Dinner & Brunch Coverage", "Full Length Documentary Film", "Hardcover Storybook Album"],
+    features: ["12 Hours of on-set coverage", "5-6 edited cinematic Instagram/ Tiktok Reels", "Unlimited Ready to post shorts (Insta stories)", "Unlimited raw content"],
     cta: "Choose Package",
     featured: false
   }
