@@ -6,8 +6,8 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #5f5e5e;
     padding: 18px 2rem;
-    bottom: 0;
-    position: fixed;
+    /* bottom: 0; */
+    /* position: fixed; */
     width: 100%;
     box-sizing: border-box;
 }

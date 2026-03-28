@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-
+const currentYear = new Date().getFullYear();
 function Footer() {
     return (
         <footer className="footerMain">
@@ -12,12 +12,12 @@ function Footer() {
                 <div className="footerLinks">
                     <a href='https://www.instagram.com/theweddingstory.sl?igsh=MWI3bnlzaDdjbWdzZw%3D%3D&utm_source=qr' target="_blank" rel="noopener noreferrer">Instagram</a>
                     <a href="https://www.tiktok.com/@theweddingstory.sl?_r=1&_t=ZS-94yyTjgksh3" target="_blank" rel="noopener noreferrer">TikTok</a>
-                    <a href="https://www.facebook.com/profile.php?id=100093441644419" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="">Privacy</a>
+
+                    <a href="https://wa.link/mvmn5x" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 </div>
 
                 <div className="footerCopyright">
-                    &copy; 2024 The Wedding Story. All rights reserved.
+                    &copy; { currentYear } The Wedding Story. All rights reserved.
                 </div>
 
             </div>
