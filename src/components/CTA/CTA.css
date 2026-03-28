@@ -6,3 +6,4 @@
 .btn-solid { background: var(--neutral); color: white; padding: 15px 35px; border: none; font-family: var(--body-font); font-weight: 600; cursor: pointer; transition: 0.3s; }
 .btn-solid:hover { background: var(--primary); }
 .btn-ghost { background: transparent; border: 1px solid rgba(0,0,0,0.1); padding: 15px 35px; margin-left: 10px; cursor: pointer; }
+.btn-solid a{text-decoration: none;}
