@@ -1,16 +1,41 @@
 /* Hero.css */
 .hero-box {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 24px;
+  max-width: 100%;
+  margin: 0 0 40px 0;
+  padding: 72px 24px;
+  min-height: 80vh;
+  
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.72)),
+    url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2U1dzd5bDVtOGFhNWgwaDJxNG13ZmZ2b3RoeXFwMWd5d2h5Mjg1ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dcmN0rX9qyfvOMAmdj/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
+  z-index: 1;
 }
 
-@media (min-width: 768px) { .hero-box { flex-direction: row; align-items: flex-end; } }
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
 
-.hero-main-title { font-family: var(--headline-font); font-size: 4rem; color: var(--neutral); line-height: 1.1; }
+.hero-main-title { font-family: var(--headline-font); font-size: 4rem; color: var(--tertiary); line-height: 1.1; }
 .hero-main-title .italic { font-style: italic; font-weight: 400; }
+.hero-box .label-sm { color: var(--primary); }
 .hero-desc-side { border-left: 2px solid var(--primary); padding-left: 20px; max-width: 350px; }
-.hero-desc-side p { font-family: var(--body-font); color: var(--secondary); font-style: italic; }
+.hero-desc-side p { font-family: var(--body-font); color: var(--tertiary); font-style: italic; }
