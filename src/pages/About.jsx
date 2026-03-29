@@ -1,11 +1,116 @@
 
+// About.jsx
+import React from "react";
+import "./About.css";
+
 function About() {
   return (
     <div className="about">
-      <h1>About Us</h1>
-      <p>At The Wedding Story, we are passionate about capturing the beauty and emotion of your special day. Our team of experienced photographers and videographers are dedicated to creating stunning visuals that tell the unique story of your wedding. We believe that every couple deserves to have their love story told in a way that is authentic and meaningful. With our expertise in storytelling, we strive to create content that not only captures the moments but also evokes the feelings and emotions of your wedding day. Let us help you create lasting memories that you can cherish forever.</p>
+      {/* Banner */}
+      <section className="banner">
+        <div className="banner-overlay">
+          <h1>Our Story</h1>
+          <p>Est. 2024</p>
+        </div>
+      </section>
+
+
+      {/* Story Section */}
+      <section className="story-section">
+        <img src="wedding_moment.png" alt="Wedding moment" />
+        <div className="story-text">
+          <h2>Capturing the Soul of the Moment</h2>
+          <p>
+            At The Wedding Story, we believe that the most profound memories aren’t
+            just seen; they are felt. Our philosophy is rooted in the art of the
+            Unseen — those fleeting, soulful instances that define the essence of
+            your celebration.
+          </p>
+          <p>
+            We’ve moved beyond traditional documentation. By blending editorial
+            precision with emotional intimacy, we create a digital tapestry that
+            mirrors the authentic heartbeat of your wedding day. It’s about the
+            nervous exhale before the aisle, the quiet glance across a crowded
+            room, and the raw joy that transcends the lens.
+          </p>
+          <p>
+            Our commitment is to your legacy. We don’t just create content; we
+            archive emotions in their purest, most high-fashion form.
+          </p>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="team">
+        <h2>The Creative Minds</h2>
+        <div className="team-members">
+          <div className="member">
+            <img src="sofia_rossi.png" alt="Sofia Rossi" />
+            <h3>Sofia Rossi</h3>
+            <p className="role">Founder & Lead Director</p>
+            <p>
+              A visionary with decades of high-fashion editorial. Sofia leads
+              The Atelier, bringing runway-quality storytelling to the wedding
+              industry.
+            </p>
+          </div>
+          <div className="member">
+            <img src="julian_reed.png" alt="Julian Reed" />
+            <h3>Julian Reed</h3>
+            <p className="role">Cinematic Producer</p>
+            <p>
+              The logistical artist behind every frame aligns with Sofia’s
+              vision, mastering the balance between chaos and cinematic calm.
+            </p>
+          </div>
+          <div className="member">
+            <img src="elena_vance.png" alt="Elena Vance" />
+            <h3>Elena Vance</h3>
+            <p className="role">Editorial Editor</p>
+            <p>
+              With an eye for rhythm and visual detail, Elena weaves raw footage
+              into elegant heirlooms that resonate across generations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="feature">
+          <h3>Mobile-First Curation</h3>
+          <p>
+            Optimized for modern devices. Our content design philosophy fits the
+            fine cinematic memories into smartphones and tablets.
+          </p>
+        </div>
+        <div className="feature">
+          <h3>Instant Delivery</h3>
+          <p>
+            Relive the magic instantly through high-fidelity, real-time digital
+            previews of your celebration’s emotional touchpoints.
+          </p>
+        </div>
+        <div className="feature">
+          <h3>Editorial Polish</h3>
+          <p>
+            Every digital album undergoes our signature color grading and
+            composition refinement for a cohesive aesthetic.
+          </p>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="cta">
+        <h2>Ready to archive your story?</h2>
+        <p>
+          Limited commissions available for 2025/2026. Let’s create something
+          timeless.
+        </p><br></br>
+        <button>Inquire about your date</button>
+      </section>
     </div>
-  )
+  );
 }
 
 export default About;

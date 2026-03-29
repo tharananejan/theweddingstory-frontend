@@ -2,27 +2,27 @@ import React from 'react';
 
 const tiers = [
   {
-    name: "The Highlight",
-    price: "2,800",
-    description: "Essential digital content creation for the modern couple.",
-    features: ["6 Hours of Coverage", "Raw Footage iPhone Content", "3 Edited Social Reels", "48-Hour Delivery"],
+    name: "Standard",
+    price: "18,000",
+    //description: "Essential digital content creation for the modern couple.",
+    features: ["6 Hours of on-set coverage of event", "2 edited cinematic Instagram/Tiktok Reels", "5 Ready to post shorts(Insta Stories)", "Unlimited raw content"],
     cta: "Choose Package",
     featured: false
   },
   {
-    name: "The Keepsake",
-    price: "4,500",
-    description: "Comprehensive storytelling with a cinematic editorial touch.",
-    features: ["8 Hours of Coverage", "Secondary Content Creator", "5 Edited Social Reels", "Drone/Aerial Footage", "Next-Day Reveal Clips"],
-    cta: "Secure Your Date",
+    name: "Premium",
+    price: "25,000",
+    //description: "Comprehensive storytelling with a cinematic editorial touch.",
+    features: ["8 Hours of on-set coverage", "3-4 edited cinematic Instagram/ Tiktok Reels", "10 Ready to post shorts (Insta stories)", "Unlimited raw content"],
+    cta: "Choose Package",
     featured: true
   },
   {
-    name: "The Ultimate",
-    price: "7,200",
-    description: "An immersive archival experience for the legacy-minded.",
-    features: ["Unlimited Weekend Coverage", "Welcome Dinner & Brunch Coverage", "Full Length Documentary Film", "Hardcover Storybook Album"],
-    cta: "Request Bespoke Quote",
+    name: "LUX",
+    price: "35,000",
+    //description: "An immersive archival experience for the legacy-minded.",
+    features: ["12 Hours of on-set coverage", "5-6 edited cinematic Instagram/ Tiktok Reels", "Unlimited Ready to post shorts (Insta stories)", "Unlimited raw content"],
+    cta: "Choose Package",
     featured: false
   }
 ];
@@ -37,8 +37,8 @@ const PricingGrid = () => {
           <div className="card-header">
             <h3 className="tier-name">{tier.name}</h3>
             <div className="price-container">
-              <span className="starting-at">Starting at</span>
-              <span className="amount">${tier.price}</span>
+              {/* <span className="starting-at">Starting at</span> */}
+              <span className="amount">LKR{tier.price}</span>
             </div>
           </div>
 
@@ -56,11 +56,11 @@ const PricingGrid = () => {
             </ul>
           </div>
 
-          <div className="card-footer">
-            <button className={`cta-button ${tier.featured ? 'primary' : 'outline'}`}>
+          {/* <div className="card-footer">
+             <button className={`cta-button ${tier.featured ? 'primary' : 'outline'}`}>
               {tier.cta}
             </button>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>
