@@ -6,7 +6,7 @@ const Filters = ({ activeFilter, onFilterChange }) => {
   
   return (
     <div className="filters-container">
-      <div className="filters-scroll">
+      {/* <div className="filters-scroll">
         {categories.map((cat) => (
           <button 
             key={cat} 
@@ -16,7 +16,7 @@ const Filters = ({ activeFilter, onFilterChange }) => {
             {cat}
           </button>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

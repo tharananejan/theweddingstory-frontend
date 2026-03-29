@@ -1,9 +1,81 @@
 /* CTA.css */
-.cta-container { text-align: center; padding: 100px 24px; background: #f0edec; margin-top: 100px; }
-.cta-subtitle { color: var(--primary); font-family: var(--body-font); text-transform: uppercase; letter-spacing: 0.3em; font-size: 11px; }
-.cta-heading { font-family: var(--headline-font); font-size: 2.5rem; margin: 30px 0; color: var(--neutral); }
-.cta-heading .italic { font-style: italic; }
-.btn-solid { background: var(--neutral); color: white; padding: 15px 35px; border: none; font-family: var(--body-font); font-weight: 600; cursor: pointer; transition: 0.3s; }
-.btn-solid:hover { background: var(--primary); }
-.btn-ghost { background: transparent; border: 1px solid rgba(0,0,0,0.1); padding: 15px 35px; margin-left: 10px; cursor: pointer; }
-.btn-solid a{text-decoration: none;}
+
+.cta-container { 
+  text-align: center; 
+  padding: 120px 24px; 
+  background: #f0edec; 
+  margin-top: 100px; 
+}
+
+.cta-subtitle { 
+  color: var(--primary); 
+  font-family: var(--body-font); 
+  text-transform: uppercase; 
+  letter-spacing: 0.4em; 
+  font-size: 12px; 
+  font-weight: 500;
+}
+
+.cta-heading { 
+  font-family: var(--headline-font); 
+  font-size: 3.5rem; 
+  margin: 35px 0; 
+  color: var(--neutral); 
+  line-height: 1.1;
+}
+
+.cta-heading .italic { 
+  font-style: italic; 
+}
+
+
+.btn-solid { 
+  background: var(--primary); 
+  color: #FFFFFF;             
+  padding: 20px 50px; 
+  border: none; 
+  font-family: var(--headline-font); 
+  font-weight: 600;           
+  font-size: 19px;            
+  font-style: italic; 
+  cursor: pointer; 
+  transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1); 
+  border-radius: var(--radius-subtle); 
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(226, 179, 49, 0.2);
+}
+
+.btn-solid:hover { 
+  background: var(--neutral); 
+  color: #FFFFFF;           
+  transform: translateY(-3px); 
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.btn-solid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.btn-ghost { 
+  background: transparent; 
+  border: 1px solid var(--secondary); 
+  color: var(--neutral);
+  padding: 20px 50px; 
+  margin-left: 20px; 
+  font-family: var(--headline-font);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+  border-radius: var(--radius-subtle);
+  cursor: pointer; 
+  transition: all 0.4s ease;
+}
+
+.btn-ghost:hover {
+  background: var(--neutral);
+  color: #FFFFFF;
+  border-color: var(--neutral);
+  transform: translateY(-3px);
+}

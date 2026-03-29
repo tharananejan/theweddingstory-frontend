@@ -14,5 +14,5 @@
 .home-wrapper {
   background-color: var(--tertiary);
   min-height: 100vh;
-  padding-top: 60px; /* Space for your fixed navbar */
+  padding-top: 0px; /* Space for your fixed navbar */
 }
