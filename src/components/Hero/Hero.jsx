@@ -5,7 +5,7 @@ const Hero = () => (
   <section className="hero-box">
     <div className="hero-content">
       <div className="hero-text-side">
-        <span className="label-sm">Selected Works</span>
+        {/* <span className="label-sm">Selected Works</span> */}
         <h1 className="hero-main-title">Capturing the <span className="italic">Soul</span> of Celebration.</h1>
       </div>
       <div className="hero-desc-side">

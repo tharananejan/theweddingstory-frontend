@@ -9,7 +9,7 @@ const CTA = () => (
       <button className="btn-solid"><a href="https://wa.me/94703009464?text=Hello%20I%20want%20more%20info" target="_blank">
   Start the Conversation
 </a></button>
-      <button className="btn-ghost">View Investment</button>
+      {/* <button className="btn-ghost">View Investment</button> */}
     </div>
   </section>
 );
