@@ -56,11 +56,11 @@ const PricingGrid = () => {
             </ul>
           </div>
 
-          <div className="card-footer">
-            <button className={`cta-button ${tier.featured ? 'primary' : 'outline'}`}>
+          {/* <div className="card-footer">
+             <button className={`cta-button ${tier.featured ? 'primary' : 'outline'}`}>
               {tier.cta}
             </button>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>
