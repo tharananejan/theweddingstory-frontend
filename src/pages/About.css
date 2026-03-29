@@ -1,0 +1,133 @@
+.about {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  background-image: url("banner.png"); /* replace with your actual banner image */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  padding: 40px 60px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-overlay h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.banner-overlay p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Story Section */
+.story-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  align-items: center;
+}
+.story-section img {
+  max-width: 45%;
+  border-radius: 8px;
+}
+.story-text {
+  flex: 1;
+  padding: 20px;
+}
+.story-text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Team Section */
+.team {
+  background: #fafafa;
+  padding: 60px 10%;
+  text-align: center;
+}
+.team h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.member {
+  max-width: 250px;
+}
+.member img {
+  width: 100%;
+  border-radius: 8px;
+}
+.member h3 {
+  margin: 15px 0 5px;
+}
+.member .role {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 10%;
+}
+.feature {
+  flex: 1 1 250px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.feature h3 {
+  margin-bottom: 10px;
+}
+
+/* Call to Action */
+.cta {
+  background: #775a00;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-style: italic;
+}
+.cta p {
+    color: #fff;
+}
+.cta button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta button:hover {
+  background: #555;
+}
