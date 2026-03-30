@@ -13,11 +13,15 @@ function Contact() {
         <div className="contact-details">
           <div className="detail-item">
             <span className="icon">✉</span>
-            <span>info@theweddingstory.com</span>
+            <span>theweddingstorysl17@gmail.com</span>
           </div>
           <div className="detail-item">
             <span className="icon">☎</span>
-            <span>(123) 456-7890</span>
+            <span>(+94) 779928178</span>
+          </div>
+          <div className="detail-item">
+            <span className="icon">☎</span>
+            <span>(+94) 707000878</span>
           </div>
         </div>
       </div>
