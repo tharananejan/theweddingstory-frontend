@@ -1,0 +1,32 @@
+.member {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.name {
+  margin: 15px 0 5px;
+  font-family: 'Noto Serif', serif;
+  color: #111111;
+}
+
+.role {
+  font-weight: bold;
+  color: #E2B331;
+  margin-bottom: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.description {
+  color: #404040;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+}

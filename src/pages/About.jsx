@@ -2,14 +2,36 @@
 // About.jsx
 import React from "react";
 import "./About.css";
+import MemberCard from "../components/About/memberCard";
 
 function About() {
+  const teamMembers = [
+    {
+      image: "sofia_rossi.png",
+      name: "Sofia Rossi",
+      role: "Founder & Lead Director",
+      description: "A visionary with decades of high-fashion editorial. Sofia leads The Atelier, bringing runway-quality storytelling to the wedding industry."
+    },
+    {
+      image: "julian_reed.png",
+      name: "Julian Reed",
+      role: "Cinematic Producer",
+      description: "The logistical artist behind every frame aligns with Sofia’s vision, mastering the balance between chaos and cinematic calm."
+    },
+    {
+      image: "elena_vance.png",
+      name: "Elena Vance",
+      role: "Editorial Editor",
+      description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
+    }
+  ];
+
   return (
     <div className="about">
       {/* Banner */}
       <section className="banner">
         <div className="banner-overlay">
-          <h1>Our Story</h1>
+          <h1 className="our-story-title">Our Story</h1>
           <p>Est. 2024</p>
         </div>
       </section>
@@ -44,34 +66,15 @@ function About() {
       <section className="team">
         <h2>The Creative Minds</h2>
         <div className="team-members">
-          <div className="member">
-            <img src="sofia_rossi.png" alt="Sofia Rossi" />
-            <h3>Sofia Rossi</h3>
-            <p className="role">Founder & Lead Director</p>
-            <p>
-              A visionary with decades of high-fashion editorial. Sofia leads
-              The Atelier, bringing runway-quality storytelling to the wedding
-              industry.
-            </p>
-          </div>
-          <div className="member">
-            <img src="julian_reed.png" alt="Julian Reed" />
-            <h3>Julian Reed</h3>
-            <p className="role">Cinematic Producer</p>
-            <p>
-              The logistical artist behind every frame aligns with Sofia’s
-              vision, mastering the balance between chaos and cinematic calm.
-            </p>
-          </div>
-          <div className="member">
-            <img src="elena_vance.png" alt="Elena Vance" />
-            <h3>Elena Vance</h3>
-            <p className="role">Editorial Editor</p>
-            <p>
-              With an eye for rhythm and visual detail, Elena weaves raw footage
-              into elegant heirlooms that resonate across generations.
-            </p>
-          </div>
+          {teamMembers.map((member, index) => (
+            <MemberCard 
+              key={index}
+              image={member.image}
+              name={member.name}
+              role={member.role}
+              description={member.description}
+            />
+          ))}
         </div>
       </section>
 
