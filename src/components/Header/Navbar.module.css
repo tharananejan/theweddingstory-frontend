@@ -58,7 +58,7 @@
 
 .mobileMenuBtn svg,
 .mobileMenuBtn img {
-    color: #775a00;
+    color: #111111;
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -84,16 +84,15 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #ffefd1a9; 
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    background-color: #F8F8F8; 
+    border-bottom: 1px solid #EAEAEA;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 10px 20px rgba(119, 90, 0, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .mobileMenuOverlay.open {
@@ -122,20 +121,22 @@
 .navbarItemMobile a {
     text-decoration: none;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #5f5e5e; 
+    color: #404040; 
     transition: all 0.3s ease;
     font-size: 1.25rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+    padding: 0.75rem 2rem;
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .navbarItemMobile a:hover {
-    color: #1c1b1b; 
-    background-color: rgba(119, 90, 0, 0.05);
+    color: #111111; 
+    background-color: rgba(226, 179, 49, 0.1);
 }
 
 .navbarItemMobile a.active {
-    color: #775a00; 
+    color: #E2B331; 
     font-weight: 600; 
-    background-color: rgba(119, 90, 0, 0.08);
+    background-color: rgba(226, 179, 49, 0.15);
 }
