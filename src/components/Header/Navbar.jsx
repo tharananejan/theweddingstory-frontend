@@ -32,7 +32,7 @@ function Navbar() {
         {/* Mobile Menu Icon */}
         <div className={styles.mobileMenuBtn} onClick={toggleMenu}>
             {isOpen ? (
-                <svg className={styles.iconClose} xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#775a00">
+                <svg className={styles.iconClose} xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#111111">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                 </svg>
             ) : (
