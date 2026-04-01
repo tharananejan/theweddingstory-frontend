@@ -17,21 +17,31 @@
 }
 
 .banner-overlay {
-  background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  background: transparent; 
   padding: 40px 60px;
-  border-radius: 8px;
   text-align: center;
-  color: #fff;
+  color: #F8F8F8; /* Tertiary color from design */
 }
 
-.banner-overlay h1 {
-  font-size: 2.5em;
+.our-story-title {
+  font-family: 'Noto Serif', serif;
+  font-size: 3.5rem; /* slightly larger for impact */
+  color: #E2B331; /* Primary color from DESIGN.md */
   margin: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  /* Strong shadow to ensure it is not mixed and is visible with any background */
+  text-shadow: 2px 4px 8px rgba(17, 17, 17, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .banner-overlay p {
-  font-size: 1.2em;
-  margin-top: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif; /* Body font */
+  font-size: 1.4rem;
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 6px rgba(17, 17, 17, 0.9), 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 /* Story Section */
@@ -70,20 +80,7 @@
   justify-content: center;
   gap: 40px;
 }
-.member {
-  max-width: 250px;
-}
-.member img {
-  width: 100%;
-  border-radius: 8px;
-}
-.member h3 {
-  margin: 15px 0 5px;
-}
-.member .role {
-  font-weight: bold;
-  color: #555;
-}
+
 
 /* Features Section */
 .features {
