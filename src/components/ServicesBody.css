@@ -197,8 +197,18 @@
   font-size: 2rem;
 }
 
+/* Services Page Container */
+.services-page {
+  padding: 6rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+  .services-page {
+    padding: 3rem 1.5rem;
+  }
   .feature-showcase {
     grid-template-columns: 1fr;
   }
