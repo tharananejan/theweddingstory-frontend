@@ -7,7 +7,7 @@
 /* Banner */
 .banner {
   position: relative;
-  background-image: url("banner.png"); /* replace with your actual banner image */
+  background-image: url("/banner.png"); /* replace with your actual banner image */
   background-size: cover;
   background-position: center;
   height: 400px; /* adjust as needed */

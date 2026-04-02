@@ -7,19 +7,19 @@ import MemberCard from "../components/About/memberCard";
 function About() {
   const teamMembers = [
     {
-      image: "sofia_rossi.png",
+      image: `${import.meta.env.BASE_URL}sofia_rossi.png`,
       name: "Sofia Rossi",
       role: "Founder & Lead Director",
       description: "A visionary with decades of high-fashion editorial. Sofia leads The Atelier, bringing runway-quality storytelling to the wedding industry."
     },
     {
-      image: "julian_reed.png",
+      image: `${import.meta.env.BASE_URL}julian_reed.png`,
       name: "Julian Reed",
       role: "Cinematic Producer",
       description: "The logistical artist behind every frame aligns with Sofia’s vision, mastering the balance between chaos and cinematic calm."
     },
     {
-      image: "elena_vance.png",
+      image: `${import.meta.env.BASE_URL}elena_vance.png`,
       name: "Elena Vance",
       role: "Editorial Editor",
       description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
@@ -39,7 +39,7 @@ function About() {
 
       {/* Story Section */}
       <section className="story-section">
-        <img src="wedding_moment.png" alt="Wedding moment" />
+        <img src={`${import.meta.env.BASE_URL}wedding_moment.png`} alt="Wedding moment" />
         <div className="story-text">
           <h2>Capturing the Soul of the Moment</h2>
           <p>
