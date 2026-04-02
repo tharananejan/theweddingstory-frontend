@@ -7,22 +7,28 @@ import MemberCard from "../components/About/memberCard";
 function About() {
   const teamMembers = [
     {
-      image: `${import.meta.env.BASE_URL}sofia_rossi.png`,
-      name: "Sofia Rossi",
-      role: "Founder & Lead Director",
-      description: "A visionary with decades of high-fashion editorial. Sofia leads The Atelier, bringing runway-quality storytelling to the wedding industry."
+      image: `${import.meta.env.BASE_URL}public/IMG_3604.jpg`,
+      name: "Uthpala Samarawikrama",
+      role: "Content Creator",
+      // description: "A visionary with decades of high-fashion editorial. Sofia leads The Atelier, bringing runway-quality storytelling to the wedding industry."
     },
     {
-      image: `${import.meta.env.BASE_URL}julian_reed.png`,
-      name: "Julian Reed",
-      role: "Cinematic Producer",
-      description: "The logistical artist behind every frame aligns with Sofia’s vision, mastering the balance between chaos and cinematic calm."
+      image: `${import.meta.env.BASE_URL}public/IMG_0219.jpg`,
+      name: "Madara Samarawikrama",
+      role: "Content Creator",
+      // description: "The logistical artist behind every frame aligns with Sofia’s vision, mastering the balance between chaos and cinematic calm."
     },
     {
-      image: `${import.meta.env.BASE_URL}elena_vance.png`,
-      name: "Elena Vance",
-      role: "Editorial Editor",
-      description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
+      image: `${import.meta.env.BASE_URL}public/IMG_3605.jpg`,
+      name: "Pasanthi Athukorala",
+      role: "Content Creator",
+      // description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
+    },
+    {
+      image: `${import.meta.env.BASE_URL}public/IMG_3603.jpg`,
+      name: "Minindu Nakandala",
+      role: "Content Creator",
+      // description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
     }
   ];
 

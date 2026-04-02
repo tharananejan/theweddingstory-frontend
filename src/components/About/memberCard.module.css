@@ -4,18 +4,25 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .image {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
+  aspect-ratio: 9/16;
+}
+
+.member:hover {
+  transform: scale(1.1); 
 }
 
 .name {
   margin: 15px 0 5px;
   font-family: 'Noto Serif', serif;
   color: #111111;
+  transition: transform 0.3s ease;
 }
 
 .role {
@@ -23,6 +30,10 @@
   color: #E2B331;
   margin-bottom: 10px;
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.member:hover .name {
+  font-size: 22px;
 }
 
 .description {
