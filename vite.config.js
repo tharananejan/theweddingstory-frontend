@@ -8,6 +8,6 @@ export default defineConfig(({ command }) => {
   return {
     plugins: [react()],
     // Only use the repo name as base when building for production
-    base: isProduction ? '/theweddingstory-frontend/' : '/',
+    // base: isProduction ? '/theweddingstory-frontend/' : '/',
   }
 })
