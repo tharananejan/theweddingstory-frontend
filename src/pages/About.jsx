@@ -7,25 +7,25 @@ import MemberCard from "../components/About/memberCard";
 function About() {
   const teamMembers = [
     {
-      image: `${import.meta.env.BASE_URL}public/IMG_3604.jpg`,
+      image: `${import.meta.env.BASE_URL}IMG_3604.jpg`,
       name: "Uthpala Samarawikrama",
       role: "Content Creator",
       // description: "A visionary with decades of high-fashion editorial. Sofia leads The Atelier, bringing runway-quality storytelling to the wedding industry."
     },
     {
-      image: `${import.meta.env.BASE_URL}public/IMG_0219.jpg`,
+      image: `${import.meta.env.BASE_URL}IMG_0219.jpg`,
       name: "Madara Samarawikrama",
       role: "Content Creator",
-      // description: "The logistical artist behind every frame aligns with Sofia’s vision, mastering the balance between chaos and cinematic calm."
+      // description: "The logistical artist behind every frame aligns with Sofia's vision, mastering the balance between chaos and cinematic calm."
     },
     {
-      image: `${import.meta.env.BASE_URL}public/IMG_3605.jpg`,
+      image: `${import.meta.env.BASE_URL}IMG_3605.jpg`,
       name: "Pasanthi Athukorala",
       role: "Content Creator",
       // description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
     },
     {
-      image: `${import.meta.env.BASE_URL}public/IMG_3603.jpg`,
+      image: `${import.meta.env.BASE_URL}IMG_3603.jpg`,
       name: "Minindu Nakandala",
       role: "Content Creator",
       // description: "With an eye for rhythm and visual detail, Elena weaves raw footage into elegant heirlooms that resonate across generations."
